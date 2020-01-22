@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Classification of an article.</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="">
+                There is no logo.
+            </div>
+            <div class="">
+                No navigation here.
+            </div>
+        </header>
+
+        <main>
+            <section>
+                <form class="" onsubmit="">
+                    <input id="article" type="text" name="input" value="" placeholder="Please enter article URL">
+                    <input id="submit" type="submit" name="" value="submit" onclick="">
+                </form>
+            <section>
+
+            <section>
+                <strong>Classification Results:</strong>
+                <div id="results">
+                    <div id="api_error"></div>
+                    <h2>Polarity</h2>
+                    <div id="polarity"></div>
+                    <h2>Polarity Confidence</h2>
+                    <div id="polarity_confidence"></div>
+                    <h2>Subjectivity</h2>
+                    <div id="subjectivity"></div>
+                    <h2>Subjectivity Confidence</h2>
+                    <div id="subjectivity_confidence"></div>
+                    <h2>Text</h2>
+                    <div id="article_text"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is not a footer</p>
+        </footer>
+        <script>
+            if('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                })
+            }
+        </script>
+    </body>
+</html>
